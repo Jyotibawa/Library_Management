@@ -50,12 +50,12 @@ CREATE TABLE issued_status (
     issued_date DATE,
     issued_book_isbn VARCHAR(50),
     issued_emp_id VARCHAR(10)
-   /* FOREIGN KEY (issued_member_id)
+     FOREIGN KEY (issued_member_id)
         REFERENCES members (member_id),
     FOREIGN KEY (issued_emp_id)
         REFERENCES employees (emp_id),
     FOREIGN KEY (issued_book_isbn)
-        REFERENCES books (isbn) */
+        REFERENCES books (isbn) 
 );
 
 -- CREATING TALE RETURN STATUS
